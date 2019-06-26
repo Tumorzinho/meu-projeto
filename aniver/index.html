@@ -13,13 +13,49 @@
         var x;
         var y;
         var result;
-        var calc = prompt("Escolha a operação a ser feita (ad, sub, mult, div):");
+        var calc = prompt("Escolha a operação a ser feita (ad, sub, mult, div, potên, raiz):");
         if (calc == "ad") {
             x = prompt("Qual o primeiro número?");
             y = prompt("Qual o segundo número?");
             x = parseInt(x);
             y = parseInt(y);
             result = x + y;
+            alert("Resultado: " + result);
+        }
+        if (calc == "sub") {
+            x = prompt("Qual o primeiro número?");
+            y = prompt("Qual o segundo número?");
+            x = parseInt(x);
+            y = parseInt(y);
+            result = x - y;
+            alert("Resultado: " + result);
+        }
+        if (calc == "mult") {
+            x = prompt("Qual o primeiro número?");
+            y = prompt("Qual o segundo número?");
+            x = parseInt(x);
+            y = parseInt(y);
+            result = x * y;
+            alert("Resultado: " + result);
+        }
+        if (calc == "div") {
+            x = prompt("Qual o primeiro número?");
+            y = prompt("Qual o segundo número?");
+            x = parseInt(x);
+            y = parseInt(y);
+            result = x / y;
+            alert("Resultado: " + result);
+        }
+        if (calc == "potên") {
+            x = prompt("Qual o número?");
+            x = parseInt(x);
+            result = x * x;
+            alert("Resultado: " + result);
+        }
+        if (calc == "raiz") {
+            x = prompt("Qual o número?");
+            x = parseInt(x);
+            result = Math.sqrt(x);
             alert("Resultado: " + result);
         }
     </script>
